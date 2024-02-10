@@ -2,7 +2,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main()
-{
+{ 
     
 }
 class Solution {
@@ -13,8 +13,9 @@ static bool cmp(const vector<int>&a,const vector<int>&b)
     return a[0]<b[0];
 }
     int maxEnvelopes(vector<vector<int>>& envelopes) {
-        int n = envelopes.size();
+        int n =  envelopes.size();
         int maxi=0;
+        int p=0;
         vector<int> dp(n, 1); 
         sort(envelopes.begin(), envelopes.end(),cmp) ;
 
