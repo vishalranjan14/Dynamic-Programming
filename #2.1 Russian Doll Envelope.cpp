@@ -15,7 +15,7 @@ static bool cmp(const vector<int>&a,const vector<int>&b)
     int maxEnvelopes(vector<vector<int>>& envelopes) {
         int n =  envelopes.size();
         int maxi=0;
-        int p=0;
+        int p=1;
         vector<int> dp(n, 1); 
         sort(envelopes.begin(), envelopes.end(),cmp) ;
 
